@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+h1 { text-align: center; margin-top: 20px; }
+
+/* Upload Container */
+.upload-box {
+    text-align: center;
+    margin: 20px;
+}
+
+.preview-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.preview-card {
+    display: inline-block;
+    margin: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.preview-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.preview-card input {
+    width: 90%;
+    padding: 6px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #555;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.08);
+}
+
+.caption {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px; right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}

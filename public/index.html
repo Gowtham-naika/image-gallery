@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Node.js Image Gallery</h1>
+
+<div class="upload-box">
+    <input type="file" id="imageInput" accept="image/*" multiple>
+    <br><br>
+    <button id="uploadBtn">Upload Images</button>
+</div>
+
+<div class="preview-container" id="previewContainer"></div>
+
+<div class="gallery" id="gallery"></div>
+
+<div class="modal" id="modal">
+    <span class="modal-close" id="closeModal">&times;</span>
+    <img id="modalImg">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
